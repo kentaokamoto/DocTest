@@ -1,2 +1,2 @@
 # kentaokamoto.github.io
-log
+-gagagag
