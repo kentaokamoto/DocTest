@@ -45,6 +45,3 @@ plugins:
     - search
 nav:
   - Home: index.md
-  - Detailed Documenation:
-      - doxygen/markdown/Classes/index.md
-     
