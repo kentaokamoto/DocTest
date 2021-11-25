@@ -1,5 +1,4 @@
 name: document
-
 on:
   schedule:
     - cron: 0 0 * * *
