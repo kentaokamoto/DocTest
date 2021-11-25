@@ -15,7 +15,7 @@ theme:
   icon:
     logo: material/robot
     repo: fontawesome/brands/github
-copyright: ' '
+copyright: 'Copyright &copy; 2020- OUXT Polaris'
 markdown_extensions:
     - pymdownx.highlight
     - pymdownx.superfences
