@@ -44,4 +44,4 @@ extra:
 plugins:
     - search
 nav:
-  - Home: index.md
+  - Home: docs/index.md
