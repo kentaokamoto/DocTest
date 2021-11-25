@@ -1,2 +1,0 @@
-# kentaokamoto.github.io
-log
