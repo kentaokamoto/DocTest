@@ -39,4 +39,4 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Tutorials:  
-    - tutorials/guid.md
+    - guid.md
