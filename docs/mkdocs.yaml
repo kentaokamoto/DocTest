@@ -47,8 +47,4 @@ nav:
   - Home: index.md
   - Detailed Documenation:
       - doxygen/markdown/Classes/index.md
-      - doxygen/markdown/Examples/index.md
-      - doxygen/markdown/Files/index.md
-      - doxygen/markdown/Modules/index.md
-      - doxygen/markdown/Namespaces/index.md
-      - doxygen/markdown/Pages/index.md
+     
