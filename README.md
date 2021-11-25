@@ -1,2 +1,0 @@
-# DocTest
-Document test
