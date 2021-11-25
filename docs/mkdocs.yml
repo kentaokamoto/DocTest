@@ -45,4 +45,4 @@ plugins:
     - search
 nav:
   - Home: 'index.md'
-  - 'User Guid':
+  - 'User Guid':  'guid.md'
