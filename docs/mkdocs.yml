@@ -37,6 +37,5 @@ markdown_extensions:
       permalink: ⚓︎
       toc_depth: 3
 nav:
-  - Home: index.md
-  - Tutorials:  
-    - guid.md
+  - 'index.md'
+  
