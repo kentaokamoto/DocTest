@@ -20,7 +20,27 @@ jobs:
         with:
           python-version: "3.6.15" 
       - name: Install
-        run: pip3 install mkdocs mkdocs-material fontawesome_markdown mdx_unimoji mkdocs-mermaid2-plugin pymdown-extensions plantuml-markdown python-markdown-math # mkdocsとその依存を指定
+        run: pip3 install mkdocs mkdocs-material fontawesome_markdown mdx_unimoji mkdocs-mermaid2-plugin pymdown-extensions plantuml-markdown python-markdown-math 
+        
+      - name: Install doxygen/depends of doxybook
+        run: sudo apt install -y doxygen wget
+      - name: Wget package
+        run: |
+            wget https://github.com/matusnovak/doxybook2/releases/download/v1.2.3/doxybook2-linux-amd64-v1.2.3.zip
+            mkdir -p ~/doxybook2
+            cp -rf . ~/doxybook2
+            cd ~/doxybook2
+            unzip doxybook2-linux-amd64-v1.2.3.zip
+      - name: Generate doxygen
+        run: |
+            cd docs/docs/doxygen
+            doxygen Doxyfile
+      - name: Generate markdown from doxygen XML file
+        run: |
+            export PATH="$PATH:~/doxybook2/bin"
+            cd docs/docs/doxygen
+            mkdir -p ./markdown/Classes
+            doxybook2 --input ./build/ --output ./markdown -c config.json
       - name: Generate documentation
         run: mkdocs build 
         working-directory: docs
