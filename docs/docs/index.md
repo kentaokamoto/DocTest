@@ -1,4 +1,0 @@
-## hello
-- aiueokakikukeko
--anonnonnonanonnonnon
--nazedaaa
